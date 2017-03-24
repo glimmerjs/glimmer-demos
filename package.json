@@ -1,0 +1,26 @@
+{
+  "name": "glimmer-demos",
+  "version": "0.0.0",
+  "description": "A brand new Glimmer app.",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember test"
+  },
+  "devDependencies": {
+    "@glimmer/application-pipeline": "^0.2.0",
+    "@glimmer/application": "^0.3.4",
+    "@glimmer/component": "^0.3.3",
+    "@glimmer/resolver": "^0.2.0",
+    "ember-cli": "2.10.0",
+    "typescript": "^2.1.5"
+  },
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "private": true
+}
