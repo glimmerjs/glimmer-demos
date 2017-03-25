@@ -1,4 +1,5 @@
 <div>
+  <h1>{{name}}</h1>
   {{#each servers key="name" as |server|}}
     <server-uptime @name={{server.name}} @days={{server.days}} />
   {{/each}}

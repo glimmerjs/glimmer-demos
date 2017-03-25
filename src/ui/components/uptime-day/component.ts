@@ -1,11 +1,11 @@
-import Component from "@glimmer/component";
+import Component, { tracked } from "@glimmer/component";
 
 export default class UptimeDay extends Component {
-  get color() {
-    return this.args.day.up ? '#8cc665' : '#ccc';
-  }
+  @tracked color: string;
+  @tracked memo: string;
 
-  get memo() {
-    return this.args.day.up ? 'Servers operational!' : 'Red alert!';
+  didUpdate() {
+    this.color = this.args.day.up ? '#8cc665' : '#ccc';
+    this.memo = this.args.day.up ? 'Servers operational!' : 'Red alert!';
   }
 }
