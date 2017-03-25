@@ -14,6 +14,5 @@ app.registerInitializer({
   }
 });
 
-app.boot();
-
 app.renderComponent('glimmer-demos', containerElement, null);
+app.boot();

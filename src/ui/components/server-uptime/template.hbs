@@ -1,0 +1,11 @@
+<div class="server-uptime">
+  <h1>{{@name}}</h1>
+  <h2>{{upDays}} Days Up</h2>
+  <h2>Biggest Streak: {{streak}}</h2>
+
+  <div class="days">
+    {{#each @days key="number" as |day|}}
+      <uptime-day @day={{day}} />
+    {{/each}}
+  </div>
+</div>

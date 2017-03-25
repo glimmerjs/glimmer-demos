@@ -3,11 +3,11 @@
 
 
 "@glimmer/application-pipeline@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/application-pipeline/-/application-pipeline-0.2.0.tgz#ae83c14f4b7db02d87c558d71497a7841cab30d2"
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@glimmer/application-pipeline/-/application-pipeline-0.2.1.tgz#8154d2a80800e01b071e2db520c3ed2f66f458e7"
   dependencies:
-    "@glimmer/compiler" "^0.23.0-alpha.2"
-    "@glimmer/di" "^0.1.8"
+    "@glimmer/compiler" "0.23.0-alpha.7"
+    "@glimmer/di" "^0.2.0"
     "@glimmer/resolution-map-builder" "^0.1.0"
     babel-plugin-external-helpers "^6.22.0"
     babel-preset-es2015 "^6.22.0"
@@ -19,25 +19,26 @@
     broccoli-config-replace "^1.1.2"
     broccoli-merge-trees "^1.1.1"
     broccoli-persistent-filter "^1.2.2"
-    broccoli-rollup "^1.0.3"
+    broccoli-rollup "^1.1.3"
     broccoli-sass "^0.7.0"
     broccoli-source "^1.1.0"
     broccoli-stew "^1.3.1"
     broccoli-string-replace "^0.1.1"
     broccoli-typescript-compiler "^1.0.1"
     broccoli-uglify-sourcemap "^1.4.0"
+    ember-cli-inject-live-reload "^1.4.1"
     handlebars "^4.0.5"
     heimdalljs-logger "^0.1.8"
     lodash.defaultsdeep "^4.6.0"
     rimraf "^2.5.4"
-    rollup "^0.36.4"
+    rollup "^0.41.6"
     rollup-plugin-babel "^2.7.1"
     rollup-plugin-node-resolve "^2.0.0"
     walk-sync "^0.3.1"
 
-"@glimmer/application@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/application/-/application-0.3.4.tgz#3243b15d1958c28dd8fd8372b33d93d9dd1c17a0"
+"@glimmer/application@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@glimmer/application/-/application-0.3.6.tgz#3479207f12b06e3d1bcc523d4f1b11f6e614a9e0"
   dependencies:
     "@glimmer/di" "^0.1.9"
     "@glimmer/object-reference" "^0.23.0-alpha.6"
@@ -46,23 +47,23 @@
     "@glimmer/runtime" "^0.23.0-alpha.6"
     "@glimmer/util" "^0.23.0-alpha.6"
 
-"@glimmer/compiler@^0.23.0-alpha.2":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.23.0-alpha.6.tgz#45da41196b45d79dad3b45835e7060a379b2f721"
+"@glimmer/compiler@0.23.0-alpha.7":
+  version "0.23.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.23.0-alpha.7.tgz#be97d71440485e38f07e85681e601a8183a4419b"
   dependencies:
-    "@glimmer/interfaces" "^0.22.0"
-    "@glimmer/syntax" "^0.23.0-alpha.6"
-    "@glimmer/util" "^0.23.0-alpha.6"
-    "@glimmer/wire-format" "^0.23.0-alpha.6"
+    "@glimmer/interfaces" "^0.23.0-alpha.7"
+    "@glimmer/syntax" "^0.23.0-alpha.7"
+    "@glimmer/util" "^0.23.0-alpha.7"
+    "@glimmer/wire-format" "^0.23.0-alpha.7"
     simple-html-tokenizer "^0.3.0"
 
-"@glimmer/component@^0.3.3":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@glimmer/component/-/component-0.3.4.tgz#5e49d4a95326f5f10bc65931e70267e2e562ba2f"
+"@glimmer/component@^0.3.5":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@glimmer/component/-/component-0.3.6.tgz#ca52d7d1b373a9afc36a110a557c95ebbb6f5bb2"
   dependencies:
     "@glimmer/util" "^0.23.0-alpha.6"
 
-"@glimmer/di@^0.1.11", "@glimmer/di@^0.1.8", "@glimmer/di@^0.1.9":
+"@glimmer/di@^0.1.11", "@glimmer/di@^0.1.9":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.1.11.tgz#a6878c07a13a2c2c76fcde598a5c97637bfc4280"
 
@@ -70,31 +71,31 @@
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.2.0.tgz#73bfd4a6ee4148a80bf092e8a5d29bcac9d4ce7e"
 
-"@glimmer/interfaces@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.22.0.tgz#69915fb6416e9cf024c73178ced513b475944baa"
+"@glimmer/interfaces@^0.23.0-alpha.7", "@glimmer/interfaces@^0.23.0-alpha.8":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.23.0-alpha.8.tgz#8d3e386315cac506b8212b168bb768c999365da2"
   dependencies:
-    "@glimmer/wire-format" "^0.22.0"
+    "@glimmer/wire-format" "^0.23.0-alpha.8"
 
-"@glimmer/object-reference@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/object-reference/-/object-reference-0.23.0-alpha.6.tgz#3f6f4a19895e7fc810a113dcaf30d77ef8985e1c"
+"@glimmer/object-reference@^0.23.0-alpha.6", "@glimmer/object-reference@^0.23.0-alpha.8":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/object-reference/-/object-reference-0.23.0-alpha.8.tgz#ed4a10f71866d9d0c17368273956a390b09b558d"
   dependencies:
-    "@glimmer/reference" "^0.23.0-alpha.6"
-    "@glimmer/util" "^0.23.0-alpha.6"
+    "@glimmer/reference" "^0.23.0-alpha.8"
+    "@glimmer/util" "^0.23.0-alpha.8"
 
-"@glimmer/object@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/object/-/object-0.23.0-alpha.6.tgz#dded6478ea813245be473135fc0be193bba7048e"
+"@glimmer/object@^0.23.0-alpha.8":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/object/-/object-0.23.0-alpha.8.tgz#c07a9c221cd47528b5b232b4e43a415214f4db28"
   dependencies:
-    "@glimmer/object-reference" "^0.23.0-alpha.6"
-    "@glimmer/util" "^0.23.0-alpha.6"
+    "@glimmer/object-reference" "^0.23.0-alpha.8"
+    "@glimmer/util" "^0.23.0-alpha.8"
 
-"@glimmer/reference@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.23.0-alpha.6.tgz#cf3698f1768d9d20ce33dbf3abb77de439c0d3c2"
+"@glimmer/reference@^0.23.0-alpha.6", "@glimmer/reference@^0.23.0-alpha.8":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.23.0-alpha.8.tgz#bd61b4c57fec2bc5737710539bc18bab5ba3cb4e"
   dependencies:
-    "@glimmer/util" "^0.23.0-alpha.6"
+    "@glimmer/util" "^0.23.0-alpha.8"
 
 "@glimmer/resolution-map-builder@^0.1.0":
   version "0.1.0"
@@ -115,44 +116,34 @@
     "@glimmer/di" "^0.2.0"
 
 "@glimmer/runtime@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/runtime/-/runtime-0.23.0-alpha.6.tgz#dd74da5ccd691b0c683c8fc3bab193a46954ff64"
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/runtime/-/runtime-0.23.0-alpha.8.tgz#b4089d965c498c2d80a0404db33ac5a4cd7bbc5b"
   dependencies:
-    "@glimmer/interfaces" "^0.22.0"
-    "@glimmer/object" "^0.23.0-alpha.6"
-    "@glimmer/object-reference" "^0.23.0-alpha.6"
-    "@glimmer/reference" "^0.23.0-alpha.6"
-    "@glimmer/util" "^0.23.0-alpha.6"
-    "@glimmer/wire-format" "^0.23.0-alpha.6"
+    "@glimmer/interfaces" "^0.23.0-alpha.8"
+    "@glimmer/object" "^0.23.0-alpha.8"
+    "@glimmer/object-reference" "^0.23.0-alpha.8"
+    "@glimmer/reference" "^0.23.0-alpha.8"
+    "@glimmer/util" "^0.23.0-alpha.8"
+    "@glimmer/wire-format" "^0.23.0-alpha.8"
 
-"@glimmer/syntax@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.23.0-alpha.6.tgz#f1b6c7d84706981008a6eed398a77f93808161bc"
+"@glimmer/syntax@^0.23.0-alpha.7":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.23.0-alpha.8.tgz#8b383eebdefa4a618333580af523618607904ec4"
   dependencies:
-    "@glimmer/interfaces" "^0.22.0"
-    "@glimmer/util" "^0.23.0-alpha.6"
+    "@glimmer/interfaces" "^0.23.0-alpha.8"
+    "@glimmer/util" "^0.23.0-alpha.8"
     handlebars "^4.0.6"
     simple-html-tokenizer "^0.3.0"
 
-"@glimmer/util@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.22.0.tgz#80883909d14b5b0e1701bca0acf5e4c580514f93"
+"@glimmer/util@^0.23.0-alpha.6", "@glimmer/util@^0.23.0-alpha.7", "@glimmer/util@^0.23.0-alpha.8":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.23.0-alpha.8.tgz#dbe4e7f342aed788efc402227c8e588d069890a0"
 
-"@glimmer/util@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.23.0-alpha.6.tgz#c8392d9d1583fc178934e469c1be4d4d96bb9a76"
-
-"@glimmer/wire-format@^0.22.0":
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.22.0.tgz#d1254f50b2b90ffe0cccb06111de986396c4393f"
+"@glimmer/wire-format@^0.23.0-alpha.7", "@glimmer/wire-format@^0.23.0-alpha.8":
+  version "0.23.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.23.0-alpha.8.tgz#e2a1ed596b71b793451ed3ceb9338cad66d1e88a"
   dependencies:
-    "@glimmer/util" "^0.22.0"
-
-"@glimmer/wire-format@^0.23.0-alpha.6":
-  version "0.23.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.23.0-alpha.6.tgz#df0e57369f97bbf4722b0b86fb8d70054a07bf65"
-  dependencies:
-    "@glimmer/util" "^0.23.0-alpha.6"
+    "@glimmer/util" "^0.23.0-alpha.8"
 
 abbrev@1:
   version "1.1.0"
@@ -176,13 +167,6 @@ acorn@^4.0.3:
 after@0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.1.tgz#ab5d4fb883f596816d3515f8f791c0af486dd627"
-
-ajv@^4.9.1:
-  version "4.11.5"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-4.11.5.tgz#b6ee74657b993a01dce44b7944d56f485828d5bd"
-  dependencies:
-    co "^4.6.0"
-    json-stable-stringify "^1.0.1"
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
@@ -247,11 +231,7 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
-aproba@^1.0.3:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.1.1.tgz#95d3600f07710aa0e9298c726ad5ecf2eacbabab"
-
-aproba@~1.0.4:
+aproba@^1.0.3, aproba@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.0.4.tgz#2713680775e7614c8ba186c065d4e2e52d1072c0"
 
@@ -383,10 +363,6 @@ async@^2.0.1:
 async@~0.2.9:
   version "0.2.10"
   resolved "https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
-
-asynckit@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
 aws-sign2@~0.6.0:
   version "0.6.0"
@@ -1270,7 +1246,7 @@ broccoli-plugin@^1.0.0, broccoli-plugin@^1.2.0, broccoli-plugin@^1.2.1, broccoli
     rimraf "^2.3.4"
     symlink-or-copy "^1.1.8"
 
-broccoli-rollup@^1.0.3:
+broccoli-rollup@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/broccoli-rollup/-/broccoli-rollup-1.1.3.tgz#3746e7464f81417747754c71b81e3135affa8617"
   dependencies:
@@ -1438,10 +1414,6 @@ caseless@~0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.11.0.tgz#715b96ea9841593cc33067923f5ec60ebda4f7d7"
 
-caseless@~0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
-
 center-align@^0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
@@ -1561,10 +1533,6 @@ cmd-shim@~2.0.2:
   dependencies:
     graceful-fs "^4.1.2"
     mkdirp "~0.5.0"
-
-co@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -1952,6 +1920,10 @@ ember-cli-get-component-path-option@^1.0.0:
 ember-cli-get-dependency-depth@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-get-dependency-depth/-/ember-cli-get-dependency-depth-1.0.0.tgz#e0afecf82a2d52f00f28ab468295281aec368d11"
+
+ember-cli-inject-live-reload@^1.4.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-inject-live-reload/-/ember-cli-inject-live-reload-1.6.1.tgz#82b8f5be454815a75e7f6d42c9ce0bc883a914a3"
 
 ember-cli-is-package-missing@^1.0.0:
   version "1.0.0"
@@ -2534,14 +2506,6 @@ form-data@~1.0.0-rc4:
     combined-stream "^1.0.5"
     mime-types "^2.1.11"
 
-form-data@~2.1.1:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/form-data/-/form-data-2.1.2.tgz#89c3534008b97eada4cbb157d58f6f5df025eae4"
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.5"
-    mime-types "^2.1.12"
-
 forwarded@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.0.tgz#19ef9874c4ae1c297bcf078fde63a09b66a84363"
@@ -2776,8 +2740,8 @@ globals@^6.4.0:
   resolved "https://registry.yarnpkg.com/globals/-/globals-6.4.1.tgz#8498032b3b6d1cc81eebc5f79690d8fe29fabf4f"
 
 globals@^9.0.0:
-  version "9.16.0"
-  resolved "https://registry.yarnpkg.com/globals/-/globals-9.16.0.tgz#63e903658171ec2d9f51b1d31de5e2b8dc01fb80"
+  version "9.17.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-9.17.0.tgz#0c0ca696d9b9bb694d2e5470bd37777caad50286"
 
 globule@^1.0.0:
   version "1.1.0"
@@ -2809,10 +2773,6 @@ handlebars@^4.0.4, handlebars@^4.0.5, handlebars@^4.0.6:
   optionalDependencies:
     uglify-js "^2.6"
 
-har-schema@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-1.0.5.tgz#d263135f43307c02c602afc8fe95970c0151369e"
-
 har-validator@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/har-validator/-/har-validator-2.0.6.tgz#cdcbc08188265ad119b6a5a7c8ab70eecfb5d27d"
@@ -2821,13 +2781,6 @@ har-validator@~2.0.6:
     commander "^2.9.0"
     is-my-json-valid "^2.12.4"
     pinkie-promise "^2.0.0"
-
-har-validator@~4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/har-validator/-/har-validator-4.2.1.tgz#33481d0f1bbff600dd203d75812a6a5fba002e2a"
-  dependencies:
-    ajv "^4.9.1"
-    har-schema "^1.0.5"
 
 has-ansi@^0.1.0:
   version "0.1.0"
@@ -3061,9 +3014,9 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
-ipaddr.js@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.2.0.tgz#8aba49c9192799585bdd643e0ccb50e8ae777ba4"
+ipaddr.js@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.3.0.tgz#1e03a52fdad83a8bbb2b25cbf4998b4cffcd3dec"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -3746,7 +3699,7 @@ micromatch@^2.1.5, micromatch@^2.3.7:
   version "1.27.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.27.0.tgz#820f572296bbd20ec25ed55e5b5de869e5436eb1"
 
-mime-types@^2.1.11, mime-types@^2.1.12, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
+mime-types@^2.1.11, mime-types@~2.1.11, mime-types@~2.1.13, mime-types@~2.1.7:
   version "2.1.15"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.15.tgz#a4ebf5064094569237b8cf70046776d09fc92aed"
   dependencies:
@@ -3768,17 +3721,13 @@ minimatch@^2.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimist@0.0.8:
+minimist@0.0.8, minimist@~0.0.1:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
 minimist@^1.1.0, minimist@^1.1.1, minimist@^1.1.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
-
-minimist@~0.0.1:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
 
 mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   version "0.5.1"
@@ -3839,25 +3788,7 @@ node-fetch@^1.3.3:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-node-gyp@^3.3.1:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.6.0.tgz#7474f63a3a0501161dda0b6341f022f14c423fa6"
-  dependencies:
-    fstream "^1.0.0"
-    glob "^7.0.3"
-    graceful-fs "^4.1.2"
-    minimatch "^3.0.2"
-    mkdirp "^0.5.0"
-    nopt "2 || 3"
-    npmlog "0 || 1 || 2 || 3 || 4"
-    osenv "0"
-    request "2"
-    rimraf "2"
-    semver "~5.3.0"
-    tar "^2.0.0"
-    which "1"
-
-node-gyp@~3.4.0:
+node-gyp@^3.3.1, node-gyp@~3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.4.0.tgz#dda558393b3ecbbe24c9e6b8703c71194c63fa36"
   dependencies:
@@ -4063,7 +3994,7 @@ npm@3.10.8:
     gauge "~2.6.0"
     set-blocking "~2.0.0"
 
-"npmlog@0 || 1 || 2 || 3 || 4", npmlog@^4.0.0, npmlog@~4.0.0:
+npmlog@^4.0.0, npmlog@~4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-4.0.2.tgz#d03950e0e78ce1527ba26d2a7592e9348ac3e75f"
   dependencies:
@@ -4261,10 +4192,6 @@ path-type@^1.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-performance-now@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
-
 pify@^2.0.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -4326,11 +4253,11 @@ proto-list@~1.2.1:
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
 
 proxy-addr@~1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-1.1.3.tgz#dc97502f5722e888467b3fa2297a7b1ff47df074"
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-1.1.4.tgz#27e545f6960a44a627d9b44467e35c1b6b4ce2f3"
   dependencies:
     forwarded "~0.1.0"
-    ipaddr.js "1.2.0"
+    ipaddr.js "1.3.0"
 
 pseudomap@^1.0.1:
   version "1.0.2"
@@ -4344,7 +4271,7 @@ q@^1.1.2:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.0.tgz#dd01bac9d06d30e6f219aecb8253ee9ebdc308f1"
 
-qs@6.4.0, qs@^6.2.0, qs@~6.4.0:
+qs@6.4.0, qs@^6.2.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
@@ -4438,7 +4365,19 @@ read@1, read@~1.0.1, read@~1.0.7:
   dependencies:
     mute-stream "~0.0.4"
 
-"readable-stream@1 || 2", readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@^2.2.2:
+"readable-stream@1 || 2", readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@~2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
+  dependencies:
+    buffer-shims "^1.0.0"
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "~1.0.0"
+    process-nextick-args "~1.0.6"
+    string_decoder "~0.10.x"
+    util-deprecate "~1.0.1"
+
+readable-stream@^2.2.2:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.6.tgz#8b43aed76e71483938d12a8d46c6cf1a00b1f816"
   dependencies:
@@ -4463,18 +4402,6 @@ readable-stream@~2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "~1.0.0"
-    process-nextick-args "~1.0.6"
-    string_decoder "~0.10.x"
-    util-deprecate "~1.0.1"
-
-readable-stream@~2.1.5:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
-  dependencies:
-    buffer-shims "^1.0.0"
     core-util-is "~1.0.0"
     inherits "~2.0.1"
     isarray "~1.0.0"
@@ -4620,34 +4547,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@2, request@^2.61.0, request@^2.74.0:
-  version "2.81.0"
-  resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
-  dependencies:
-    aws-sign2 "~0.6.0"
-    aws4 "^1.2.1"
-    caseless "~0.12.0"
-    combined-stream "~1.0.5"
-    extend "~3.0.0"
-    forever-agent "~0.6.1"
-    form-data "~2.1.1"
-    har-validator "~4.2.1"
-    hawk "~3.1.3"
-    http-signature "~1.1.0"
-    is-typedarray "~1.0.0"
-    isstream "~0.1.2"
-    json-stringify-safe "~5.0.1"
-    mime-types "~2.1.7"
-    oauth-sign "~0.8.1"
-    performance-now "^0.2.0"
-    qs "~6.4.0"
-    safe-buffer "^5.0.1"
-    stringstream "~0.0.4"
-    tough-cookie "~2.3.0"
-    tunnel-agent "^0.6.0"
-    uuid "^3.0.0"
-
-request@~2.74.0:
+request@2, request@^2.61.0, request@^2.74.0, request@~2.74.0:
   version "2.74.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.74.0.tgz#7693ca768bbb0ea5c8ce08c084a45efa05b892ab"
   dependencies:
@@ -4759,13 +4659,7 @@ rollup-pluginutils@^1.5.0:
     estree-walker "^0.2.1"
     minimatch "^3.0.2"
 
-rollup@^0.36.4:
-  version "0.36.4"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.36.4.tgz#a224494c5386c1d73d38f7bb86f69f5eb011a3d2"
-  dependencies:
-    source-map-support "^0.4.0"
-
-rollup@^0.41.4:
+rollup@^0.41.4, rollup@^0.41.6:
   version "0.41.6"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.41.6.tgz#e0d05497877a398c104d816d2733a718a7a94e2a"
   dependencies:
@@ -4788,10 +4682,6 @@ run-async@^2.2.0:
 rx@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/rx/-/rx-4.1.0.tgz#a5f13ff79ef3b740fe30aa803fb09f98805d4782"
-
-safe-buffer@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
 
 safe-json-parse@~1.0.1:
   version "1.0.1"
@@ -5266,12 +5156,6 @@ tryor@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/tryor/-/tryor-0.1.2.tgz#8145e4ca7caff40acde3ccf946e8b8bb75b4172b"
 
-tunnel-agent@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
-  dependencies:
-    safe-buffer "^5.0.1"
-
 tunnel-agent@~0.4.1:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.4.3.tgz#6373db76909fe570e08d73583365ed828a74eeeb"
@@ -5373,10 +5257,6 @@ utils-merge@1.0.0:
 uuid@^2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
-
-uuid@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
 validate-npm-package-license@*, validate-npm-package-license@^3.0.1:
   version "3.0.1"
