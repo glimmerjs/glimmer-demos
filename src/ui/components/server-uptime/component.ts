@@ -1,14 +1,16 @@
-import Component from "@glimmer/component";
+import Component, { tracked } from "@glimmer/component";
 
 export default class ServerUptime extends Component {
   args: { days: any[] };
 
+  @tracked('args')
   get upDays() {
     return this.args.days.reduce((upDays, day) => {
       return upDays += (day.up ? 1 : 0);
     }, 0);
   }
 
+  @tracked('args')
   get streak() {
     let [max] = this.args.days.reduce(([max, streak], day) => {
       if (day.up && streak + 1 > max) {
