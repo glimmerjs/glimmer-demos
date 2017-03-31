@@ -1,7 +1,6 @@
 # glimmer-demos
 
-This README outlines the details of collaborating on this Glimmer application.
-A short introduction of this app could easily go here.
+Checkout the [demo in action](https://glimmerjs.com/demos/uptime-boxes/).
 
 ## Prerequisites
 
