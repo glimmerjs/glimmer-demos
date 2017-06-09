@@ -12,12 +12,15 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@glimmer/application": "^0.4.0",
-    "@glimmer/application-pipeline": "^0.5.0",
-    "@glimmer/component": "^0.3.8",
+    "@glimmer/application": "^0.5.1",
+    "@glimmer/application-pipeline": "^0.7.0",
+    "@glimmer/blueprint": "^0.3.1",
     "@glimmer/resolver": "^0.3.0",
-    "ember-cli": "2.12.1",
+    "broccoli-asset-rev": "^2.5.0",
+    "ember-cli": "^2.14.0-beta.2",
     "ember-cli-inject-live-reload": "^1.6.1",
+    "ember-cli-sass": "^6.2.0",
+    "ember-cli-uglify": "^1.2.0",
     "typescript": "^2.2.2"
   },
   "engines": {

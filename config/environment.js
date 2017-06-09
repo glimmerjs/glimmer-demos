@@ -1,17 +1,7 @@
-/* jshint node: true */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
-    modulePrefix: 'demo-d',
-    environment: environment
-  };
-
-  return ENV;
-};
-/* jshint node: true */
-
-module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'glimmer-demos',
     environment: environment
   };
