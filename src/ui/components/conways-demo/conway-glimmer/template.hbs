@@ -1,0 +1,5 @@
+<div class="world">
+  {{#each @world.cells key="key" as |cell|}}
+    <organism-cell-glimmer @cell={{cell}} />
+  {{/each}}
+</div>

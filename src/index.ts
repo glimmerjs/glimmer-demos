@@ -17,3 +17,5 @@ app.registerInitializer({
 app.renderComponent('glimmer-demos', containerElement, null);
 
 app.boot();
+
+window['rerender'] = app['_rerender'];
