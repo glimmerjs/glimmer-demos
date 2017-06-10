@@ -1,7 +1,10 @@
-<div class="{{currentDemo}}">
+<div>
   {{#if currentDemo}}
     <button class="back" onclick={{action setCurrentDemo null}}>⬅️ Back</button>
-    {{component currentDemo}}
+
+    <div class="{{currentDemo}}">
+      {{component currentDemo}}
+    </div>
   {{else}}
     <div class="demos">
       <h1>Glimmer Demos</h1>
