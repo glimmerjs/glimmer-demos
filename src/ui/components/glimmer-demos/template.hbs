@@ -11,7 +11,7 @@
       <ul>
         {{#each demos key="@index" as |demo|}}
           <li>
-            <button onclick={{action setCurrentDemo demo}}>{{demo}}</button>
+            <button onclick={{action setCurrentDemo demo.component}}>{{demo.name}}</button>
           </li>
         {{/each}}
       </ul>
