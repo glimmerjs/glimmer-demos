@@ -13,14 +13,13 @@ export default class RipplesDemo extends Component {
   @tracked height = window.innerHeight;
   @tracked count = 0;
   @tracked points: Point[] = [];
+  refreshScheduled = false;
 
   constructor(options) {
     super(options);
 
     window.addEventListener('resize', this.windowResizeHandler);
     document.addEventListener('mousemove', this.mouseMoveHandler);
-
-    this.tick();
   }
 
   willDestroy() {
@@ -41,10 +40,19 @@ export default class RipplesDemo extends Component {
       x: event.layerX,
       y: event.layerY,
     }];
+
+    if (!this.refreshScheduled) {
+      this.tick();
+    }
   }
 
   tick = () => {
     let timestamp = window.performance.now();
+    this.refreshScheduled = false;
+
+    if (!this.points.length) {
+      return;
+    }
 
     this.points = this.points.map((point) => {
       let delta = timestamp - point.timestamp;
@@ -59,5 +67,6 @@ export default class RipplesDemo extends Component {
     this.count = this.points.length;
 
     window.requestAnimationFrame(this.tick);
+    this.refreshScheduled = true;
   }
 }
