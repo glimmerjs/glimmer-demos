@@ -1,0 +1,47 @@
+<div>
+  <h3>Statements</h3>
+  <ol>
+    {{#each @spec.statements key="@index" as |statement|}}
+      <li><span class="pre">{{json statement}}</span></li>
+    {{/each}}
+  </ol>
+  <hr />
+  {{#if @spec.locals}}
+    <h3>Locals</h3>
+    <ol>
+      {{#each @spec.locals key="@index" as |local|}}
+        <li><span class="pre">{{json local}}</span></li>
+      {{/each}}
+    </ol>
+    <hr />
+  {{/if}}
+  {{#if @spec.named}}
+    <h3>Named</h3>
+    <ol>
+      {{#each @spec.named key="@index" as |name|}}
+        <li><span class="pre">{{json name}}</span></li>
+      {{/each}}
+    </ol>
+    <hr />
+  {{/if}}
+  {{#if @spec.yields}}
+    <h3>Yields</h3>
+    <ol>
+      {{#each @spec.yields key="@index" as |yield|}}
+        <li><span class="pre">{{json yield}}</span></li>
+      {{/each}}
+    </ol>
+    <hr />
+  {{/if}}
+  {{#if @spec.blocks}}
+    <h3>Blocks</h3>
+    <ol>
+      {{#each @spec.blocks key="@index" as |block|}}
+        <li>
+          <h3>Block</h3>
+          <wire-format-inspector @spec={{block}} />
+        </li>
+      {{/each}}
+    </ol>
+  {{/if}}
+</div>
