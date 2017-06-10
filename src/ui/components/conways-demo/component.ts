@@ -1,4 +1,4 @@
-import Component from "@glimmer/component";
+import Component, { tracked } from "@glimmer/component";
 
 interface World {
   advance(): void;
@@ -21,30 +21,24 @@ function getWorld(): World {
 }
 
 export default class ConwayDemo extends Component {
-  private actions: object;
+  @tracked private demo: 'Glimmer' | 'DOM' | null = null;
+  @tracked private world: World = getWorld();
 
-  private demo: 'Glimmer' | 'DOM' | null = null;
-  private world: World = getWorld();
-
-  constructor(injections: object) {
-    super(injections);
-
-    this.actions = {
-      startGlimmer: () => this.start('Glimmer'),
-      startDOM: () => this.start('DOM'),
-      stop: () => this.stop(),
-      tick: () => this.tick()
-    };
+  willDestroy() {
+    this.stop();
   }
 
+  @tracked('demo')
   get isRunning(): boolean {
     return this.demo !== null;
   }
 
+  @tracked('demo')
   get isGlimmer(): boolean {
     return this.demo === 'Glimmer';
   }
 
+  @tracked('demo')
   get isDOM(): boolean {
     return this.demo === 'DOM';
   }
@@ -56,14 +50,13 @@ export default class ConwayDemo extends Component {
 
   stop() {
     this.demo = null;
-    rerender();
   }
 
-  tick() {
+  tick = () => {
     if (this.isRunning) {
       this.world.advance();
       rerender();
-      requestAnimationFrame(this.actions['tick']);
+      requestAnimationFrame(this.tick);
     }
   }
 }
