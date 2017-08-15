@@ -1,0 +1,9 @@
+<svg width="{{width}}" height="{{height}}">
+  <rect x="0" y="0" width="{{width}}" height="{{height}}" fill="#1B1B1B" />
+
+  {{#each points key="@index" as |point|}}
+    <circle cx="{{point.x}}" cy="{{point.y}}" r="{{point.size}}" stroke-width="1" stroke="lightblue" stroke-opacity="{{point.opacity}}" fill-opacity="0" />
+  {{/each}}
+
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="0" y="{{height}}">{{count}} circles</text>
+</svg>

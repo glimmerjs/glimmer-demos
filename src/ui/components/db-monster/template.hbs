@@ -1,0 +1,17 @@
+<div>
+  {{#if fps}}
+    <div id="fps">{{fps}} FPS</div>
+  {{/if}}
+
+  <button class="play-pause" onclick={{action toggle}}>
+    {{#if playing}}Pause{{else}}Play{{/if}}
+  </button>
+
+  <table class="table table-striped latest-data">
+    <tbody>
+      {{#each model.databaseArray key='name' as |db|}}
+        <dbmon-database @db={{db}} />
+      {{/each}}
+    </tbody>
+  </table>
+</div>

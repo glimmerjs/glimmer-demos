@@ -1,0 +1,25 @@
+.world {
+  position: relative;
+  width: 199px;
+  height: 199px;
+}
+
+.conways-demo {
+  .conways-main {
+    width: 600px;
+    margin: 40px auto;
+  }
+
+  .organism-cell {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    background: black;
+    /* transition: background-color 0.5s; */
+  }
+
+  .organism-cell.alive {
+    background: white;
+  }
+}

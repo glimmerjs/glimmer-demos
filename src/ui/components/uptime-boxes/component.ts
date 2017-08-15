@@ -2,13 +2,18 @@ import Component, { tracked } from "@glimmer/component";
 
 export default class UptimeBoxes extends Component {
   @tracked servers = generateServers()
+  animationFrameRequestId: number;
 
   didInsertElement() {
     this.update();
   }
 
+  willDestroy() {
+    cancelAnimationFrame(this.animationFrameRequestId);
+  }
+
   update() {
-    requestAnimationFrame(() => {
+    this.animationFrameRequestId = requestAnimationFrame(() => {
       this.servers = generateServers();
       this.update();
     });

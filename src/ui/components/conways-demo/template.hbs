@@ -1,0 +1,11 @@
+<div class="conways-main">
+  <button onclick={{action start 'Glimmer'}}>Start (Glimmer)</button>
+  <button onclick={{action start 'DOM'}}>Start (DOM)</button>
+  <button onclick={{action stop}}>Stop</button>
+
+  {{#if isGlimmer}}
+    <conway-glimmer @world={{world}} />
+  {{else if isDOM}}
+    <conway-dom @world={{world}} />
+  {{/if}}
+</div>

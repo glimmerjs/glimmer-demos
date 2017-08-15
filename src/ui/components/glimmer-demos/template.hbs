@@ -1,3 +1,20 @@
 <div>
-  <uptime-boxes />
+  {{#if currentDemo}}
+    <button class="back" onclick={{action setCurrentDemo null}}>⬅️ Back</button>
+
+    <div class="{{currentDemo}}">
+      {{component currentDemo}}
+    </div>
+  {{else}}
+    <div class="demos">
+      <h1>Glimmer Demos</h1>
+      <ul>
+        {{#each demos key="@index" as |demo|}}
+          <li>
+            <button onclick={{action setCurrentDemo demo.component}}>{{demo.name}}</button>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  {{/if}}
 </div>

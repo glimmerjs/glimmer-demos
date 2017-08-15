@@ -1,0 +1,76 @@
+<div class="ui">
+  <div id="inputs" class="{{if rendered '' 'full-width'}}">
+    <h1>
+      <span style="font-size: 48px; color: rgb(238, 89, 57);">Glimmer</span>
+      <span style="font-size: 40px; color: rgb(161, 63, 43);">Visualizer</span>
+    </h1>
+
+    <div class="input-group">
+      <label for="data">Data</label>
+      <textarea id="data" wrap="off">{{data}}</textarea>
+    </div>
+
+    <div class="input-group">
+      <label for="top-level-template">Top-Level Template</label>
+      <textarea id="top-level-template" wrap="off" readOnly={{if rendered true false}}>{{template.source}}</textarea>
+    </div>
+
+    <div class="input-group">
+      <label for="component-layout">&lt;h-card&gt; Layout</label>
+      <textarea id="component-layout" wrap="off" readOnly={{if rendered true false}}>{{layout.source}}</textarea>
+    </div>
+
+    <button id="btn-render" class="primary" style="display: {{if rendered 'none' 'block'}}">Render</button>
+    <button id="btn-update" class="primary" style="display: {{if rendered 'block' 'none'}}">Update</button>
+    <button id="btn-edit" style="display: {{if rendered 'block' 'none'}}">Edit</button>
+    <button id="btn-reset">Reset</button>
+  </div>
+
+  {{#if rendered}}
+    <div id="output">
+      <div id="wire-format">
+        <div class="header">Wire Format (Top-Level)</div>
+        <wire-format-inspector class="content" @spec={{template.wireFormat}} />
+        <div class="header secondary">Wire Format (&lt;h-card&gt;)</div>
+        <wire-format-inspector class="content" @spec={{layout.wireFormat}} />
+      </div>
+      <div id="initial">
+        <div class="header">Opcodes (Top-Level)</div>
+        <div class="content">
+          <h3>Opcodes</h3>
+          <ol>
+            {{#each template.opcodes key="guid" as |opcode|}}
+              <opcode-inspector @opcode={{opcode}} />
+            {{/each}}
+          </ol>
+        </div>
+        <div class="header secondary">Opcodes (&lt;h-card&gt;)</div>
+        <div class="content">
+          <h3>Opcodes</h3>
+          <ol>
+            {{#each layout.opcodes key="guid" as |opcode|}}
+              <opcode-inspector @opcode={{opcode}} />
+            {{/each}}
+          </ol>
+        </div>
+      </div>
+      <div id="updating">
+        <div class="header">Updating Opcodes</div>
+        <div class="content full-height">
+          <h3>Opcodes</h3>
+          <ol>
+            {{#each updatingOpcodes key="guid" as |opcode|}}
+              <opcode-inspector @opcode={{opcode}} />
+            {{/each}}
+          </ol>
+        </div>
+      </div>
+      <div id="dom">
+        <div class="header">DOM</div>
+        <div class="content rendered">{{{html}}}</div>
+        <div class="header secondary">HTML</div>
+        <pre class="content secondary source">{{html}}</pre>
+      </div>
+    </div>
+  {{/if}}
+</div>

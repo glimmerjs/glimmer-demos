@@ -1,0 +1,10 @@
+<li>
+  <span class="pre">{{#if @opcode.deopted}}[DEOPT] <del>{{pp-opcode @opcode}}</del>{{else}}{{pp-opcode @opcode}}{{/if}}</span>
+  {{#if @opcode.children}}
+    <ol>
+      {{#each @opcode.children key="guid" as |opcode|}}
+        <opcode-inspector @opcode={{opcode}} />
+      {{/each}}
+    </ol>
+  {{/if}}
+</li>
