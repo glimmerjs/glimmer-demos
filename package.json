@@ -7,20 +7,24 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build",
+    "build": "ember build -e production",
     "start": "ember server",
     "test": "ember test"
   },
   "devDependencies": {
-    "@glimmer/application": "^0.5.1",
-    "@glimmer/application-pipeline": "^0.7.0",
-    "@glimmer/blueprint": "^0.3.1",
-    "@glimmer/resolver": "^0.3.0",
-    "broccoli-asset-rev": "^2.5.0",
-    "ember-cli": "^2.14.0-beta.2",
-    "ember-cli-inject-live-reload": "^1.6.1",
-    "ember-cli-sass": "^6.2.0",
-    "ember-cli-uglify": "^1.2.0",
+    "@glimmer/application": "^0.7.2",
+    "@glimmer/application-pipeline": "^0.8.3",
+    "@glimmer/inline-precompile": "^1.0.0",
+    "@glimmer/blueprint": "^0.5.3",
+    "@glimmer/resolver": "^0.4.1",
+    "@glimmer/test-helpers": "^0.30.0",
+    "@types/qunit": "^2.0.31",
+    "broccoli-asset-rev": "^2.6.0",
+    "ember-cli": "^2.15.0",
+    "ember-cli-dependency-checker": "^2.0.1",
+    "ember-cli-inject-live-reload": "^1.7.0",
+    "ember-cli-sass": "^7.0.0",
+    "ember-cli-uglify": "^2.0.0-beta.1",
     "typescript": "^2.2.2"
   },
   "engines": {
